@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args){
-        System.out.println("Hola");
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Que numero desea");
+        int numero = teclado.nextInt();
+        System.out.println("Hola" + numero + "!");
+        teclado.close();
     }
 } 
